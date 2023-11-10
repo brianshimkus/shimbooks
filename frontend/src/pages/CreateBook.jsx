@@ -27,10 +27,10 @@ export default function CreateBook() {
 				enqueueSnackbar('Book Created successfully', { variant: 'success' })
 				navigate('/')
 			})
-			.catch((error) => {
+			.catch((err) => {
 				setLoading(false)
 				enqueueSnackbar('Error', { variant: 'error' })
-				console.log(error)
+				console.log(err)
 			})
 	}
 
